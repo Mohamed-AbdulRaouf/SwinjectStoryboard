@@ -121,7 +121,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
                 injectDependency(to: child)
             }
 #else
-            for child in viewController.childViewControllers {
+            for child in viewController.children {
                 injectDependency(to: child)
             }
 #endif
@@ -206,7 +206,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
                 injectDependency(to: child)
             }
 #else
-            for child in viewController.childViewControllers {
+            for child in viewController.children {
                 injectDependency(to: child)
             }
 #endif
